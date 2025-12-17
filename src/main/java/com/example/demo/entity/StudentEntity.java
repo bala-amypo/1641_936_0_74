@@ -1,12 +1,16 @@
 package com.example.demo.entity;
 
 import java.sql.Date;
-import jakarta.persistance.Entity;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistance.Generatedvalue;
+import jakarta.persistance.GenerationType;
 
 
 @Entity
 public class StudentEntity{
     @Id
+    @Generatedvalue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String email;
@@ -21,10 +25,10 @@ public class StudentEntity{
     }
 
     //Id -primary key
-    public Integer getId(){
+    public Integer getID(){
         return id;
     }
-    public void setId(Integer id){
+    public void setID(Integer id){
         this.id=id;
     }
 
