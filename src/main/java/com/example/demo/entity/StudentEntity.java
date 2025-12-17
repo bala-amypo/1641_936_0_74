@@ -6,7 +6,7 @@ public class StudentEntity{
     private String name;
     private String email;
     private String password;
-
+    private Date created;
     //Name
     public String getName(){
         return name;
@@ -39,12 +39,22 @@ public class StudentEntity{
         this.password=password;
     }
 
+    // Created
+    public Date getCreated(){
+        return 
+    }
+
     //Parameter constructor
 
-    public StudentEntity(Integer id,String ,String email,String password){
-        this.name=name;
+    public StudentEntity(Integer id,String name,String email,String password){
         this.id=id;
+        this.name=name;
         this.email=email;
         this.password=password;
+    }
+
+    // Default constructor
+    public StudentEntity(){
+
     }
 }
