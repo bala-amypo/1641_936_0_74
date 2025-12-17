@@ -12,7 +12,7 @@ public class StudentServiceimpl implements StudentService{
     @Autowired StudentRepository student;
     // save,findAll(),findById(),deleteId(),existsById()
     public StudentEntity postdata(StudentEntity stu){
-        return student.save
+        return student.save(stu);
     }
 
 }
