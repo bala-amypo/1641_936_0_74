@@ -1,7 +1,12 @@
 package com.example.demo.entity;
 
+import java.sql.Date;
+import jakarta.persistance.Entity;
+
+
 @Entity
 public class StudentEntity{
+    @Id
     private Integer id;
     private String name;
     private String email;
@@ -41,16 +46,19 @@ public class StudentEntity{
 
     // Created
     public Date getCreated(){
-        return 
+        return created;
+    }
+    public void setCreated(Date created){
+        this.created=created;
     }
 
     //Parameter constructor
-
-    public StudentEntity(Integer id,String name,String email,String password){
+    public StudentEntity(Integer id,String name,String email,String password,Date created){
         this.id=id;
         this.name=name;
         this.email=email;
         this.password=password;
+        this.created=created
     }
 
     // Default constructor
