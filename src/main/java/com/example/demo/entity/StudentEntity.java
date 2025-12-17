@@ -6,8 +6,8 @@ public class StudentEntity{
     private Integer id;
     private String email;
     private String password;
-    private Date created;
 
+    //Name
     public String getName(){
         return name;
     }
@@ -15,16 +15,29 @@ public class StudentEntity{
         this.name=name;
     }
 
+    //Id -primary key
     public Integer getId(){
         return id;
     }
     public void setId(Integer id){
         this.id=id;
     }
+
+    //Email
     public String getEmail(){
         return email;
     }
-    public void setName(String name){
-        this.name=name;
+    public void setEmail(String email){
+        this.email=email;
     }
+
+    // Password
+    public String getPassword(){
+        return password;
+    }
+    public void setName(String password){
+        this.password=password;
+    }
+
+    //Parameter cons
 }
