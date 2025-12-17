@@ -1,10 +1,10 @@
 package com.example.demo.entity;
 
-import java.sql.Date;
+import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistance.Generatedvalue;
-import jakarta.persistance.GenerationType;
+import jakarta.persistence.Generatedvalue;
+import jakarta.persistence.GenerationType;
 
 
 @Entity
