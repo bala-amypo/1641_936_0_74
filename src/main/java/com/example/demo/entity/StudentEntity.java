@@ -62,7 +62,7 @@ public class StudentEntity{
         this.name=name;
         this.email=email;
         this.password=password;
-        this.created=created
+        this.created=created;
     }
 
     // Default constructor
