@@ -3,15 +3,16 @@ package com.example.demo.service.impl;
 import org.springframework.stereotype.Service;
 import com.example.demo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.
+import com.example.demo.entity.StudentEntity;
 
 
 @Service
 public class StudentServiceimpl implements StudentService{
         
     @Autowired StudentRepository student;
+    // save,findAll(),findById(),deleteId(),existsById()
     public StudentEntity postdata(StudentEntity stu){
-       
+        return student.save
     }
 
 }
