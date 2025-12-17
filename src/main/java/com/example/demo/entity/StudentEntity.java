@@ -2,8 +2,8 @@ package com.example.demo.entity;
 
 @Entity
 public class StudentEntity{
-    private String name;
     private Integer id;
+    private String name;
     private String email;
     private String password;
 
@@ -35,9 +35,16 @@ public class StudentEntity{
     public String getPassword(){
         return password;
     }
-    public void setName(String password){
+    public void setPassword(String password){
         this.password=password;
     }
 
-    //Parameter cons
+    //Parameter constructor
+
+    public StudentEntity(Integer id,String ,String email,String password){
+        this.name=name;
+        this.id=id;
+        this.email=email;
+        this.password=password;
+    }
 }
