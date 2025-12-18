@@ -19,11 +19,21 @@ public class ValidationEntity{
     private String username;
     @Email(message="Email is not valid")
     private String email;
-    @Size(min=0,max=6,message="")
+    @Size(min=0,max=6,message="Password must contain 6 letters")
     @NotNull(message="Password is mandatory")
     private String password;
     @Max(30)
     @Positive
     @NotNull
     private int age;
+
+
+
+    public ValidationEntity(
+        Long id,
+        @NotNull @Size(min=6,max=30,message="Must be 6 to 30") String username,
+        @Email(message="Email is not valid") String email,
+         @Size(min=0,max=6,message="Password must contain 6 letters") 
+
+    )
 }
