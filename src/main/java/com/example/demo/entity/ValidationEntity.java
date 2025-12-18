@@ -19,9 +19,11 @@ public class ValidationEntity{
     private String username;
     @Email(message="Email is not valid")
     private String email;
-    @Max(6)
-    @NotNull
+    @Size(min=0,max=6,message="")
+    @NotNull(message="Password is mandatory")
     private String password;
+    @Max(30)
+    @Positive
     @NotNull
     private int age;
 }
