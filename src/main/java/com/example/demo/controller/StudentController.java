@@ -22,4 +22,6 @@ public class StudentController{
     public List<StudentEntity> getAllData(){
         return ser.getdata();
     }
+
+    @
 }
