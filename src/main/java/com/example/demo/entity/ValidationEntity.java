@@ -8,6 +8,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Positive;
 
 @Entity
 public class ValidationEntity{
@@ -39,7 +40,7 @@ public class ValidationEntity{
     public Long getID(){
         return id;
     }
-    public void setID(Integer id){
+    public void setID(Long id){
         this.id=id;
     }
 
@@ -79,5 +80,8 @@ public class ValidationEntity{
         this.email=email;
         this.password=password;
         this.age=age;
+    }
+    public ValidationEntity(){
+
     }
 }
