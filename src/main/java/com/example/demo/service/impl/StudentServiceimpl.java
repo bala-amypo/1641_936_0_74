@@ -32,6 +32,6 @@ public class StudentServiceimpl implements StudentService{
 
     @Override
     public StudentEntity getidforupdate(int id){
-        return student.findById(id);
+        return student.findById(id).orElse(null);
     }
 }
