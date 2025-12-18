@@ -9,7 +9,7 @@ import java.util.List;
 
 
 @Service
-public class StudentServiceimpl implements StudentService{
+public class ValidationServiceimpl implements ValidationService{
         
     // @Autowired StudentRepository student;
     // // save,findAll(),findById(),deleteId(),existsById()
@@ -43,4 +43,11 @@ public class StudentServiceimpl implements StudentService{
     //     }
     //     return null;
     // }
+
+    @Autowired ValidationRepository ves;
+
+    @Override
+    public ValidationEntity vpostall(ValidationEntity v){
+        return ves.save(v);
+    }
 }

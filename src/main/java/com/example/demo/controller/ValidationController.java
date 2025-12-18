@@ -43,7 +43,7 @@ public class StudentController{
     // }
     @Autowired ValidationService s
     @PostMapping("vpost")
-    public ValidationEntity vpostdata(@RequestBody ValidationEntity v){
+    public ValidationEntity vpostdata(@Valid @RequestBody ValidationEntity v){
         return s.vpostall(v)
     }
 }
