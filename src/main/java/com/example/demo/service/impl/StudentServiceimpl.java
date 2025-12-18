@@ -19,7 +19,7 @@ public class StudentServiceimpl implements StudentService{
     }
 
 
-    @Overide
+    @Override
     public List<StudentEntity> getdata(){
         return student.findAll();
     }
