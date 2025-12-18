@@ -19,5 +19,7 @@ public class StudentServiceimpl implements StudentService{
 
 
     @Overide
-    public S
+    public List<StudentEntity> getdata(){
+        return
+    }
 }
