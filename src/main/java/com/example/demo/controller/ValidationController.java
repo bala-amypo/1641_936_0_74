@@ -41,4 +41,9 @@ public class StudentController{
     // public StudentEntity update(@PathVariable int id,@RequestBody StudentEntity stu){
     //     return ser.updatedata(id,stu);
     // }
+    @Autowired ValidationService s
+    @PostMapping("vpost")
+    public ValidationEntity vpostdata(@RequestBody ValidationEntity v){
+        return s.vpostall(v)
+    }
 }
