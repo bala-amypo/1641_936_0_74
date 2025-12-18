@@ -31,7 +31,7 @@ public class StudentServiceimpl implements StudentService{
     }
 
     @Override
-    public StudentEntity updatedata(int id){
-        student.
+    public StudentEntity getdataforupdate(int id){
+        return student.findById(id);
     }
 }
