@@ -15,35 +15,10 @@ import com.example.demo.service.ValidationService;
 import java.util.List;
 
 @RestController
-public class StudentController{
-    // @Autowired StudentService ser;
-    // @PostMapping("/post")
-    // public StudentEntity sendData(@RequestBody StudentEntity stu){
-    //         return ser.postdata(stu);
-    // }
-
-    // @GetMapping("/get")
-    // public List<StudentEntity> getAllData(){
-    //     return ser.getdata();
-    // }
-
-    // @DeleteMapping("/delete/{id}")
-    // public String deleteid(@PathVariable int id){
-    //     return ser.deletedata(id);
-    // }
-
-    // @GetMapping("/getid/{id}")
-    // public StudentEntity getdataid(@PathVariable int id){
-    //     return ser.getid(id);
-    // }
-
-    // @PutMapping("/update/{id}")
-    // public StudentEntity update(@PathVariable int id,@RequestBody StudentEntity stu){
-    //     return ser.updatedata(id,stu);
-    // }
+public class ValidationController{
     @Autowired ValidationService s
     @PostMapping("vpost")
     public ValidationEntity vpostdata(@Valid @RequestBody ValidationEntity v){
-        return s.vpostall(v)
+        return s.vpostall(v);
     }
 }

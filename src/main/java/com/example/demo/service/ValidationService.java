@@ -4,5 +4,5 @@ import com.example.demo.entity.ValidationEntity;
 import java.util.List;
 
 public interface ValidationService{
-        ValidationEntity vpostall(ValidationEntity v)
+        ValidationEntity vpostall(ValidationEntity v);
 }
