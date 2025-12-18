@@ -34,6 +34,6 @@ public class StudentController{
 
     @GetMapping("/getid/{id}")
     public StudentEntity getdataid(@PathVariable int id){
-        return ser.getidforupdate(id);
+        return ser.getid(id);
     }
 }
