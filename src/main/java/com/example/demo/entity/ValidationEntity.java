@@ -44,8 +44,6 @@ public class ValidationEntity{
         this.username=username;
     }
 
-    
-
     //Email
     public String getEmail(){
         return email;
