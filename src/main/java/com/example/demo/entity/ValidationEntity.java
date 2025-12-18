@@ -28,6 +28,14 @@ public class ValidationEntity{
     @NotNull
     private int age;
 
+    //Id -primary key
+    public Long getID(){
+        return id;
+    }
+    public void setID(Long id){
+        this.id=id;
+    }
+
     //Name
     public String getName(){
         return username;
@@ -36,13 +44,7 @@ public class ValidationEntity{
         this.username=username;
     }
 
-    //Id -primary key
-    public Long getID(){
-        return id;
-    }
-    public void setID(Long id){
-        this.id=id;
-    }
+    
 
     //Email
     public String getEmail(){
