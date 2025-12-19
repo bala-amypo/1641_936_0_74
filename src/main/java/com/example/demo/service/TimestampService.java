@@ -2,6 +2,6 @@ package com.example.demo.service;
 
 import com.example.demo.entity.Timestamp;
 
-public class TimestampService{
+public interface TimestampService{
     Timestamp tpostall(Timestamp v);
 }
