@@ -3,15 +3,23 @@ package com.example.demo.controller;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
-import com.example.demo.service.TimestampService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.PathVariable;
+import jakarta.validation.Valid;
+
 import com.example.demo.entity.Timestamp;
+
+
 
 
 @RestController
 public class TimestampController{
     @Autowired TimestampService s;
     @PostMapping("/vpost")
-    public Timestamp tpostdata(@Valid @RequestBody Timestamp v){
+    public Timestamp tpostdata(@RequestBody Timestamp v){
         return s.tpostall(v);
     }
 }
