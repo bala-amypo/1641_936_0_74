@@ -22,6 +22,8 @@ public class ValidationController{
         return s.vpostall(v);
     }
 
-    @GetMapping("/vget")
-    public 
+    @GetMapping("/vget/{id}")
+    public ValidationEntity vgetall(@PathVariable long id){
+            return s.vgetid(id);
+    }
 }
