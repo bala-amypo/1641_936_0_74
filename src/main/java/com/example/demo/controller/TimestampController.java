@@ -11,15 +11,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import jakarta.validation.Valid;
 
 import com.example.demo.entity.Timestamp;
-
+import com.example.demo.service.TimestampService;
 
 
 
 @RestController
 public class TimestampController{
-    @Autowired TimestampService s;
-    @PostMapping("/vpost")
+    @Autowired TimestampService ser;
+    @PostMapping("/tpost")
     public Timestamp tpostdata(@RequestBody Timestamp v){
-        return s.tpostall(v);
+        return ser.tpostall(v);
     }
 }
