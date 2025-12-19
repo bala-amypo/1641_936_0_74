@@ -21,4 +21,7 @@ public class ValidationController{
     public ValidationEntity vpostdata(@Valid @RequestBody ValidationEntity v){
         return s.vpostall(v);
     }
+
+    @GetMapping("/vget")
+    public 
 }

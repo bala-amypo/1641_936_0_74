@@ -17,4 +17,10 @@ public class ValidationServiceimpl implements ValidationService{
     public ValidationEntity vpostall(ValidationEntity v){
         return ves.save(v);
     }
+
+    @Override
+    public ValidationEntity vgetid(long id){
+        return ves.findById(id);
+    }
+
 }
