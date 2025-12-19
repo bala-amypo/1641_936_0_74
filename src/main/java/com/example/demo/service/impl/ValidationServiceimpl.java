@@ -20,7 +20,7 @@ public class ValidationServiceimpl implements ValidationService{
 
     @Override
     public ValidationEntity vgetid(long id){
-        return ves.findById(id).orElseThrow(()->new ValidationException());
+        return ves.findById(id).orElseThrow(()->new ValidationException("Invalid Id :"+id));
     }
 
 }
