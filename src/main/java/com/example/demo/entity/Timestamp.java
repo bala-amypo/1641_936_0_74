@@ -35,6 +35,6 @@ public class Timestamp{
     @PreUpdate
     public void Afterupdate(){
         LocalDateTime now= LocalDateTime().now();
-
+        this.updatedAt=now;
     }
 }
