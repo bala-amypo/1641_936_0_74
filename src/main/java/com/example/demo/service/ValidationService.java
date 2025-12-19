@@ -5,5 +5,5 @@ import java.util.List;
 
 public interface ValidationService{
         ValidationEntity vpostall(ValidationEntity v);
-        ValidationEntity vgetid(Long id);
+        ValidationEntity vgetid(long id);
 }
