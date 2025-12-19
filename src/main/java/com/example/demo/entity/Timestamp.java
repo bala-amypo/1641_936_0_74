@@ -6,6 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -26,8 +27,14 @@ public class Timestamp{
 
     @PrePersist
     public void Oncreate(){
-        LocalDateTime now= new LocalDateTime();
+        LocalDateTime now= LocalDateTime().now();
         this.createdAt=now;
         this.updatedAt=now;
+    }
+
+    @PreUpdate
+    public void Afterupdate(){
+        LocalDateTime now= LocalDateTime().now();
+
     }
 }
